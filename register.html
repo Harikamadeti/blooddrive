@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], input[type=password] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #C0C0C0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #ff0000;
+}
+
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+	
+}
+
+.container {
+    padding: 16px;
+}
+</style>
+<body>
+
+<div align="center" color:#c8001a><h2>Register Form</h2>
+
+<form action="ins.php" style="border:1px solid #ccc" method="post">
+  <div class="container">
+ 
+     <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required><label><b>Password</b></label><input type="password" placeholder="Enter Password" name="psw" required></br>
+    <label><b>Number</b></label>
+    <input type="text" placeholder="enter number" name="num" required>
+    <label><b>Username</b></label>
+    <input type="text" placeholder="enter name" name="name" required></br><label><b>bloodgroup<b></label><select name="grp">
+						<option value="o-">o-</option>
+						<option value="o+">o+</option>
+						<option value="AB+">AB+</option>
+						<option value="AB-">AB-</option>
+						<option value="A+">A+</option>
+						<option value="B+">B+</option>
+						<option value="A-">A-</option>
+						<option value="B-">B-</option>
+					  </select></br></br>
+    <label><b>Date of Birth :</b></label><input type="date" name="date" value="" placeholder="dd-mm-yyyy" required>
+    <label><b>Recently donated:</b></label><input type="date" name="rdate" value="" placeholder="dd-mm-yyyy" required>
+
+ </br></br><label><b>Gender :  </b></label>Male<input type="radio" name="rad" value="male">Female<input type="radio" name="rad" value="female"></br></br>
+    
+    <input type="checkbox" checked="checked"> Remember me
+    <div align="center">
+      <button type="button" class="cancelbtn" onclick="location.href='all.html'">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
